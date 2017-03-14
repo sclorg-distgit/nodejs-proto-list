@@ -4,9 +4,9 @@
 
 Name:       %{?scl_prefix}nodejs-proto-list
 Version:    1.2.4
-Release:    1%{?dist}
+Release:    2%{?dist}
 Summary:    A list of objects bound by prototype chain
-License:    MIT
+License:    ISC
 URL:        https://github.com/isaacs/proto-list
 Source0:    http://registry.npmjs.org/proto-list/-/proto-list-%{version}.tgz
 BuildArch:  noarch
@@ -43,6 +43,9 @@ cp -p package.json proto-list.js %{buildroot}%{nodejs_sitelib}/proto-list
 %doc LICENSE README.md
 
 %changelog
+* Fri Mar 10 2017 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.2.4-2
+- Correct license
+
 * Wed Sep 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 1.2.4-1
 - Updated with script
 
